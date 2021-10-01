@@ -1,23 +1,17 @@
 const express = require('express');
-const app = express();
-const port = 3000;
 const path = require('path');
+
+const app = express();
+const port = process.env.PORT || 3000;
+
 
 app.set("view engine", "ejs")
 
 app.use(express.static(path.join(__dirname, "public"))); // 
+app.use(express.urlencoded());
 
-app.get('/', (req, res) => {
-    res.send("hello blusds")
-})
-
-
-app.get('/page', (req, res) => {
-    res.render('pagina')
-})
-
-app.get('/teste3', (req, res) => {
-    res.send("Quero jogaaar")
+app.get("/cadastro", (req, res, next) =>{
+    res.render("cadastro")
 })
 
 app.listen(port, () => console.log(`servidor rodando na porta ${port}`))
