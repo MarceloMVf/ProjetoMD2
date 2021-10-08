@@ -1,0 +1,108 @@
+#faixa {
+    background-color: red;
+    /* display: flex;
+    align-items: justify;
+    position: fixed;
+    width: 100%; */
+
+};
+
+#cabecalho{
+    display: flex;
+    text-align: justify;
+    position: fixed;
+}
+
+  
+#cadastrar {
+    background-color:red;
+    border: 30px;
+    position: relative;
+    left: 750px;
+    top: -50px;
+}
+
+#imgcadastrar {
+    width: 200px;
+    height: 200x;
+  }
+  
+  #faixa ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  #cadastrar:hover {
+    background-color: blue;
+  }
+
+  body{
+    background-image: url('../image/head.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: center;
+}; 
+
+
+/* #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+    background-color: thistle;
+    height: 200px;
+    width: 200px;
+
+}; */
+
+#item.imagem { 
+    width: 500px;
+    height: 500px;
+    align-items: center; 
+}
+p{
+    text-align: center
+}
+
+#lista {
+    background: linear-gradient(0, #520606,#ff0000);
+    /* background: #d82c2c; */
+    width: 1000px;
+    position: relative;
+    left: 450px;
+    top: 100px;
+};
+
+#item.nome{
+    color: #000;
+}
+
+section#message {
+    padding: 1.5rem;
+    background-color: rgb(197, 255, 214);
+    color: #004d04;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }

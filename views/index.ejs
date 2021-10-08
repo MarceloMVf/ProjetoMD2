@@ -5,12 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Pokedex  </title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Pokedex</title>
 </head>
+<header id="faixa">
+    <nav >
+        <h1 id="cabecalho">Meus pokemons favoritos</h1>
+       <h2>Essa é sua pokedex personalizável, você pode cadastrar seus pokemons favoritos e cataloga-los da forma que preferir.</h2>
+        <div > 
+            <button id="cadastrar"><a href="cadastro"><img src="/image/Cadastrar.gif" id="imgcadastrar" ></a></button>
+        </div>
+    </nav>
+</header>
+<body>
+    <section id="message">
+        <p>cadastrado</p> <span id="close">&times;</span>
+    </section>
+    
 
-<body> 
-    <header>
-        <h1>Pokedex NodeJS</h1>
-    </header>
+    <section id="lista">
+        <% pokedex.forEach(item=> { %>
+        <ul id="item.nome">
+            <li></li>
+            <%= item.Nome %>
+            </li>
+            <li>
+            <%= item.Tipo %>
+            </li>
+        </ul>
+        <ul id="item.imagem">
+            <li>
+                <a href="detalhes/:id"><img src="<%=item.Imagem%>" /> </a>
+             
+            </li>
+        </ul>
+        <% }) %>
+    </section>
+  
+    <script src="/JS/script.js"></script> 
 </body>
+</html>
